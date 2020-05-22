@@ -1,0 +1,292 @@
+.boton{
+      text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+			text-align:center;
+			text-decoration: none;
+      font-family: 'Helvetica Neue', Helvetica, sans-serif;
+      display:inline-block;
+			color: #FFF;
+			background: #7F8C8D;
+			padding: 7px 20px;
+			white-space: nowrap;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 100px;
+			margin: 30px 0px;
+			-webkit-transition: all 0.2s ease-in-out;
+			-ms-transition: all 0.2s ease-in-out;
+			-moz-transition: all 0.2s ease-in-out;
+			-o-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+	width: 30%;
+}
+   
+.azul{
+  background: #3498DB;
+  box-shadow: 0px 5px 0px 0px #2980B9;
+}
+
+.azul:hover{
+  background: #39a0e5;
+}
+
+.azul:active{
+  box-shadow: 0px 2px 0px 0px #2980B9;
+}
+
+h5{
+	text-align: justify;
+	font-size: 25px;
+}
+h1{
+	font-family: Brush Script MT;
+	font-size: 50px;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  background: #E4F5F0;
+  text-align: center;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 20px;
+  line-height: 22px;
+}
+.cabecera {
+  width: 100%;
+  height: 0;
+  padding-bottom: 25%;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 4px double #A4ECEF;
+}
+header{
+
+   /*position: fixed;*/
+    left: 0;
+    top: 0;
+    right:0;
+	opacity: 1;
+float: center;
+}
+nav {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+ul.fullnav, ul.fullnav ul {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  text-align: center;
+}
+ul.fullnav {
+  border-top: 4px double black;
+  border-bottom: 4px solid black;
+  background: #DAFAFD;
+}
+ul.fullnav li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  line-height: 60px;
+}
+ul.fullnav li a {
+  display: block;
+  padding: 0 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333;
+}
+ul.fullnav li ul {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  background: #999;
+  line-height: 0;
+  z-index: 3;
+}
+ul.fullnav ul a {
+  color: white;
+}
+ul.fullnav li:hover a {
+  background: #999;
+}
+ul.fullnav li:hover ul {
+  height: auto;
+}
+ul.fullnav li:hover ul li a {
+  background: transparent;
+}
+ul.fullnav li:hover ul li a:hover {
+  text-decoration: none;
+  color: red;
+}
+section {
+  padding: 40px;
+  text-align: left;
+}
+
+
+
+.contenedor {
+	width: 80%;
+	margin: 0 auto;
+	}
+
+.banner {
+	width: 100% ;
+	height: 350px;
+	margin: auto;
+	background-size: 100% 100%; 
+	animation: banner 10s infinite;
+}
+.baner-1:hover {
+  transform: scale(1.05);
+	 }
+
+@keyframes banner {
+	0%, 5% {
+		opacity: 0.1;
+	}
+	5%, 30% {
+		background-image: url(i2.jpg);
+		opacity: 1;
+	} 
+	31%, 34% {
+		opacity: 0.1;
+	}
+	35%, 65% {
+		background-image: url(i3.jpg);
+		opacity: 1;
+	}
+
+	66%, 69% {
+		opacity: 0.1;
+	}
+
+	70%, 100% {
+		opacity: 1;
+		background-image: url(i4.jpg);		
+	}
+
+}
+
+@media (max-width: 800px) {
+	.banner {
+		height: 400px;
+	}
+}
+
+@media (max-width: 600px) {
+	.banner {
+		height: 300px;
+	}
+}
+.contener{
+	 opacity: 0.6;
+background-color:#E1FBFC;
+background-origin: padding-box;
+margin: 0 auto;
+width: 80%;
+}
+
+
+.footer{
+    background-color: #A4ECEF;
+    padding: 4rem 0;
+    text-align: center;
+	margin-top: 1rem;
+	}
+p{
+	
+	font-family: "Helvetica Neue", "sans-serif";
+}
+.baner-containe {
+  /* Estilos de Tamaño */
+  height: 350px;
+  width: 100%;
+  border-radius: 10px;
+
+  /* Agrego un margin de 300px arriba y abajo para generar espacio */
+  margin: 40px auto;
+
+  /* Estilos para que el contenido no se salga del contenedor */
+  overflow: hidden;
+
+  /* Estilos de Sombra 
+  box-shadow: 0px 10px 10px -5px #000000;
+  */
+}
+
+/* Estos serán los estilos generales de los banners */
+.baner {
+  /* Estilos de tamaño */
+  height: 100%;
+  width: 100%;
+
+  /* Estilos de Alineamiento */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Estilos de fondo */
+  background-size: cover;
+  background-position: center;
+
+  /* Con attachment: fixed; 
+     nuestro banner ahora es como una ventana
+  */
+  background-attachment: fixed;
+}
+
+/* Estos son los estilos generales para los titulos dentro de los banners */
+.baner h1 {
+  /* Estilos de Letra */
+  font-size: 54px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+/* ---------- Estilos del banner 1 ---------- */
+.baner-1 {
+  /* Estilos de fondo */
+  /* Los siguientes códigos representan un color
+     Negro con 50% de transparencia:
+       rgba(0, 0, 0, 0.5)
+       #00000050
+  */
+  background-image: url("yyt.jpg");
+
+  /* Estilos para que al hacer una transformación,
+     El cambio no sea brusco y dure 0.5 segundos
+  */
+  transition: transform 0.5s;
+}
+
+.baner-1:hover {
+  transform: scale(1.05);
+}
+h3{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color: green;
+	font-size: 25px;
+	text-align: justify;
+}
+h6{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color: darkblue;
+	font-size: 25px;
+	text-align: justify;
+}
+h2{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color: orange;
+ font-size: 25px;
+	text-align: justify;
+}
